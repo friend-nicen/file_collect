@@ -1,0 +1,23 @@
+/* 轮播项面板 */
+.action {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 33.3%;
+  margin: 10rpx 0;
+  border-radius: 50%;
+
+  .image {
+    width: 35%;
+    min-height: 70rpx;
+  }
+
+  .this {
+    margin-top: 27rpx;
+    width: 100%;
+    text-align: center;
+  }
+}

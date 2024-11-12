@@ -1,0 +1,164 @@
+@import "@/assets/css/common.scss";
+
+/* 设置整个项目的背景色 */
+page {
+  background-color: white !important;
+}
+
+
+.flex {
+  @include flex-center;
+  align-content: center;
+}
+
+.size {
+  font-size: 38rpx;
+  padding-top: 1.5rpx;
+}
+
+
+/* 顶部的背景图片 */
+.header {
+
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+
+
+  width: 100%;
+  position: relative;
+  top: -10rpx;
+  height: 40vh;
+  flex-shrink: 1;
+  background-image: url("@/assets/image/header.svg");
+  padding: 10px;
+
+  .user {
+
+    @include flex-align-center;
+    justify-content: flex-start;
+    margin-top: 10%;
+    width: 100%;
+    font-size: 36rpx;
+
+
+    .avatar-wrapper {
+
+      border: none;
+      background-color: transparent;
+      margin: 0 15px;
+      padding: 0;
+      line-height: normal;
+      width: 20%;
+      box-sizing: border-box;
+
+      &::after {
+        border: none;
+      }
+    }
+
+    .image {
+
+      border-radius: 50%;
+      width: 120rpx;
+      height: 120rpx;
+      box-sizing: border-box;
+
+
+    }
+
+    .top {
+      @include flex-align-center;
+      justify-content: flex-start;
+      width: 100%;
+
+      /* 用户级别 */
+      .level {
+        padding: 1px 10px;
+        background-color: #4CD964;
+        border-radius: 15rpx;
+        font-size: 20rpx;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 20rpx;
+
+      }
+    }
+
+    .bottom {
+      margin-top: 6px;
+      width: 100%;
+      font-size: 26rpx;
+      color: #909399;
+    }
+  }
+
+}
+
+/* 底部功能菜单 */
+.menu {
+
+  position: relative;
+  background-color: white;
+  padding-bottom: 20px;
+  width: 100%;
+  top: -10vh;
+  margin: 0;
+
+
+  .item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+
+    .left {
+      font-size: 16.5px;
+      margin-left: 20rpx;
+      color: #303133;
+    }
+
+    .arrow {
+      margin-bottom: -4rpx;
+    }
+
+    .right {
+      color: #606266;
+    }
+
+    /* 按钮的样式 */
+    .feed {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 1.5;
+      font-size: 15.5px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: #ffffff;
+
+      /* 取消边框 */
+      &::after {
+        border: none;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+
+    image {
+      border-radius: 50%;
+      width: 25px;
+    }
+  }
+
+}
+

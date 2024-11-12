@@ -1,0 +1,73 @@
+/* 公共样式 */
+@import '@/assets/css/common.scss';
+
+:deep(.card) {
+
+  @include card($margin: 10rpx 2.5%, $padding: 36rpx 24rpx 5rpx 24rpx, $width: 95%);
+
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  font-weight: 350;
+  color: #000000;
+
+  /* 表单项 */
+  .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rpx 5rpx 25rpx 5rpx;
+    width: 100%;
+
+    /* 输入框之前的标签，强制不换行 */
+    .label {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      margin-right: 36rpx;
+      font-size: 32rpx;
+    }
+
+    /* 输入框和文本框的宽度 */
+    .input,
+    .textarea {
+      margin-top: 1px;
+      width: 100%;
+      font-weight: lighter;
+      font-size: 32rpx;
+      color: #3A3A3A;
+    }
+
+    /* 调整输入框的右侧补白 */
+    .input {
+      padding-right: 30rpx;
+    }
+  }
+
+  /* 提醒的小字 */
+  .small {
+    margin-top: 15rpx;
+    margin-bottom: 15px;
+    font-size: 30rpx;
+    color: $union-color;
+
+    .blue {
+      color: #2979FF;
+      margin-right: 5rpx;
+    }
+
+    .rule {
+      word-wrap: break-word;
+      word-spacing: normal;
+      word-break: break-all;
+    }
+  }
+
+  /* 红色的*号样式 */
+  .red {
+    position: absolute;
+    color: red;
+    right: -22rpx;
+  }
+}

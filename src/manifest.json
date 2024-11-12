@@ -1,0 +1,47 @@
+{
+  "name": "文件收集小工具",
+  "appid": "appid",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    /* 5+App特有相关 */
+    "usingComponents": true,
+    "nvueCompiler": "uni-app",
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    /* 模块配置 */
+    "distribute": {
+      "ios": {},
+      "sdkConfigs": {
+        "ad": {}
+      }
+    }
+  },
+  "quickapp": {},
+  "networkTimeout": {
+    "request": 3600000,
+    "uploadFile": 3600000,
+    "downloadFile": 3600000
+  },
+  "mp-weixin": {
+    "__usePrivacyCheck__": true,
+    "appid": "wx20241112",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": true,
+    "mergeVirtualHostAttributes": true
+  },
+  "vueVersion": "3"
+}

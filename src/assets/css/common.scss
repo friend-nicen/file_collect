@@ -1,0 +1,139 @@
+$primary-color: #3491fa;
+$active-color: #3491fa;
+$primary-color-2: rgba(#07c160, 0.8);
+$active-color-2: #07c160;
+
+$sidebar-shadow: 1px 1px 8px #{rgba(#1D2329,0.15)};
+
+$hover-color: #cacaca;
+
+$bg-color: #f5f5f5;
+$bg-color-2: #f5f6f8;
+$bg-color-3: #faf1f1;
+
+$font-size: 32rpx;
+$font-size-1: 30rpx;
+$font-size-2: 28rpx;
+$font-size-3: 26rpx;
+$font-size-4: 24rpx;
+$font-size-5: 20rpx;
+
+$sidebar-shadow: 1px 1px 8px #{rgba(#1d2329, 0.15)};
+$box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 0 3px rgba(0, 0, 0, 0.05);
+
+$union-color: #606266;
+$text-1: #000000;
+$text-2: #262626;
+$text-3: #889191;
+$text-4: rgba(0, 0, 0, 0.65);
+$text-5: rgba(136, 136, 136, 0.5);
+$text-6: #303133;
+
+
+$border-color: #e1e1e1;
+$border-color-1: #dee4eb;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* 强制不换行 */
+@mixin wrap {
+  word-wrap: break-word;
+  word-spacing: normal;
+  word-break: break-all;
+}
+
+/* 卡片样式 */
+@mixin card($padding:0,$margin:6px 5%,$width:90%) {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: $margin;
+  padding: $padding;
+  width: $width;
+}
+
+
+/* 卡片样式 */
+@mixin card-icon($padding:0,$margin:6px 5%,$width:90%) {
+
+  /* 图标的样式 */
+  .icon {
+
+    width: 30%;
+    overflow: hidden;
+    @include flex-center;
+
+
+    /* 图表内部图片的样式 */
+    .image {
+      border-radius: 50%;
+      width: 134rpx;
+      height: 134rpx;
+      margin-top: 2px;
+      box-sizing: border-box;
+    }
+
+    /* 图表内部图片的样式 */
+    image {
+      width: 100%;
+    }
+  }
+}
+
+/* 卡片信息 */
+@mixin card-info($level:0) {
+
+  /* 功能标题 */
+  .information {
+
+    @include flex-column-start;
+    justify-content: center;
+    width: 70%;
+
+    .title {
+      @include flex-align-center;
+      font-size: $font-size;
+
+
+      @if ($level == 1) {
+        /* 用户级别 */
+        .level {
+          background-color: #4cd964;
+          border-radius: 15rpx;
+          font-size: $font-size-5;
+          padding: 1px 10px;
+          color: #ffffff;
+          font-weight: bold;
+          margin-left: 20rpx;
+        }
+      }
+
+    }
+
+
+    .description {
+      font-size: $font-size-2;
+      margin-top: 25rpx;
+      font-weight: lighter;
+    }
+  }
+
+
+}

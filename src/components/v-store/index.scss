@@ -1,0 +1,53 @@
+@import '@/assets/css/common.scss';
+
+$text-color: white;
+
+.angle {
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 0;
+  content: " ";
+  border: 12rpx solid transparent;
+  z-index: 100;
+  border-bottom-color: #{rgba(#000000,0.8)};
+}
+
+
+.step {
+  position: fixed;
+  top: 22rpx;
+  right: 5vw;
+  display: inline;
+  box-sizing: border-box;
+  padding: 24rpx 28rpx;
+
+  background-color: #{rgba(#000000,0.8)};
+  border-radius: 6rpx;
+  z-index: 100;
+
+  word-wrap: break-word;
+  word-spacing: normal;
+  word-break: break-all;
+
+
+  .contents {
+    font-size: $font-size-3;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cancel {
+      font-size: $font-size-3;
+      color: $primary-color-2;
+
+      &:active {
+        color: $active-color-2;
+      }
+    }
+
+  }
+
+
+}
