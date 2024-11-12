@@ -11,15 +11,17 @@
 
 您可以扫码上方小程序码或者直接点击（如果点击需要在手机端点击哦）：[https://mini.nicen.cn](https://mini.nicen.cn)，自动跳转到微信小程序进行预览体验！
 
+
+Github：[https://github.com/friend-nicen/file_collect](https://github.com/friend-nicen/file_collect)
+
+Gitee：[https://gitee.com/friend-nicen/file_collect](https://gitee.com/friend-nicen/file_collect)
+
 ## 上手
 
 ### 1.介绍
 
 * 基于uniapp-cli + vue3 + pinia，UI库为uniapp官方组件库
 * 当前代码和小程序线上代码同步，效果别无二致
-
-Github：[https://github.com/friend-nicen/file_collect](https://github.com/friend-nicen/file_collect)
-Gitee：[https://gitee.com/friend-nicen/file_collect](https://gitee.com/friend-nicen/file_collect)
 
 ### 2.运行
 
